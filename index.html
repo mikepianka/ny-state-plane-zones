@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://js.arcgis.com/4.18/esri/themes/light/main.css"
+    />
+    <title>NY State Plane Zones</title>
+    <style>
+      html,
+      body,
+      .map-container,
+      #mapDiv {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .info {
+        padding: 10px;
+        background-color: white;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="map-container">
+      <div id="mapInfo" class="esri-widget info">
+        <h2>NY State Plane Zones</h2>
+        <h3>
+          Data sourced from the
+          <a href="https://gis.ny.gov/" target="_blank" rel="noreferrer"
+            >NYS GIS Clearinghouse</a
+          >
+        </h3>
+      </div>
+      <div id="mapDiv"></div>
+    </div>
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
